@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Get the best resume" />
+    <meta name="keywords" content="resume, job, career, job center" />
+    <meta name="author" content="Michael Adeleye" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/framework.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/buttons.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+    <link rel="stylesheet" href="assets/css/forms.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Resume Builder</title>
+  </head>
+  <body>
+    <section class="form-section top-padding-20 pd-bottom-20">
+      <div class="fullw-form">
+        <div class="item">
+          <h1>Get Your CV</h1>
+          <p>Upload Your existing CV and let make it great</p>
+          <form enctype="multipart/form-data" id="cv-form">
+            <div class="form-group">
+              <input
+                type="file"
+                name="upload-cv"
+                id="upload-cv"
+                placeholder="Upload your current CV"
+              />
+            </div>
+            <div class="form-group">
+              <button class="btn btn-default" id="generate-cv" type="submit">
+                Get Started
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div id="prompt-response"></div>
+
+    <div class="space"></div>
+
+    <!-- Output container for extracted text -->
+    <div
+      id="docx-text-output"
+      style="white-space: pre-wrap; padding: 20px; border: 1px solid #ccc"
+    ></div>
+
+    <script src="./js/mammoth.browser.js"></script>
+    <script src="./assets/js/bundle.js"></script>
+  </body>
+</html>
