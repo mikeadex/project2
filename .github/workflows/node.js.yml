@@ -28,5 +28,5 @@ jobs:
       - run: npm ci
       # - run: npx beautify **/*.js
       # - run: npm run build-mammoth
-      - run: npm run build
+      # - run: npm run build
       - run: npm test
