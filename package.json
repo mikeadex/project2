@@ -24,6 +24,7 @@
     "word-extractor": "^1.0.4"
   },
   "devDependencies": {
+    "browserify": "^17.0.1",
     "js-beautify": "^1.15.1"
   }
 }
