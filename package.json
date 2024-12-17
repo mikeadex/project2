@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "browserify client.js -o bundle.js",
-    "watch": "watchify client.js -o bundle.js",
+    "build": "browserify handleDocs.js -o bundle.js",
+    "watch": "watchify handleDocs.js -o bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
