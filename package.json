@@ -6,8 +6,9 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "browserify handleDocs.js -o bundle.js",
-    "watch": "watchify handleDocs.js -o bundle.js",
+    "build": "browserify mammoth.browser.js -o bundle.js",
+    "build-mammoth": "browserify node_modules/mammoth/lib/index.js -o mammoth.browser.js",
+    "watch": "watchify mammoth.browser.js -o bundle.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
