@@ -13,7 +13,6 @@ export function validateStep4() {
     const jobType = document.getElementById('job-type').value.trim();
     let isValid = true;
 
-    let errorMsg = [];
     if (jobInterest === '' || jobInterest === null) {
         displayFieldError('errorJobInterest', 'What job are you interested in?');
         isValid = false;

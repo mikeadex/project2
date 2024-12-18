@@ -13,15 +13,11 @@ import {
 
 // import { addEducationField } from './addEducation.js';
 
-const circles = document.querySelectorAll('.circle-step');
 //===============Set the initial state of the form================
-let currentActive = 1;
-let len = circles.length;
 
 
 //===============Event Listeners================
 const buttonEvents = () => {
-    const cancel = document.getElementById('cancel');
     const next1 = document.getElementById('next1');
     const next2 = document.getElementById('next2');
     const next3 = document.getElementById('next3');

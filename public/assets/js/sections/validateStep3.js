@@ -74,7 +74,7 @@ export function validateStep3() {
         const startDate = new Date(startDateRaw.value.trim());
         const endDate = new Date(endDateRaw.value.trim());
         const jobDescription = jobDescriptionRaw.value.trim();
-        const achievements = achievementsRaw.value.trim();
+
 
 
 

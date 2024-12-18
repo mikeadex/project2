@@ -24,7 +24,7 @@ export function validateStep2() {
         const qualificationRaw = fieldset.querySelector(`#your-qualification-${i}`);
         const startDateRaw = fieldset.querySelector(`#start-date-${i}`);
         const completionDateRaw = fieldset.querySelector(`#error-end-${i}`);
-        const certificateInViewRaw = fieldset.querySelector(`#certificate-inview-${i}`);
+
 
         if (schoolNameRaw === null || courseNameRaw === null || qualificationRaw === null || startDateRaw === null || completionDateRaw === null) {
             console.error('Required fields are missing');
@@ -87,11 +87,3 @@ export function validateStep2() {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const initialFieldset = document.querySelector('.edu-fieldset');
-    if (initialFieldset) {
-        const index = initialFieldset.getAttribute('data-index');
-        const certificateCheckbox = initialFieldset.querySelector(`#certificate-inview-${index}`);
-        certificateCheckbox.addEventListener('change', () => handleToggle(initialFieldset));
-    }
-});
