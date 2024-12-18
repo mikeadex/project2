@@ -130,6 +130,6 @@ export function validateStep3() {
         } else {
             clearErrorField(`error-job-desc-${i}`);
         }
-    })
+    });
     return isValid;
 }
