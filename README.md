@@ -1,4 +1,4 @@
-# Meet Ella, an HR Expert (35 Years Old) - Project 2
+# Meet Ella, an HR Expert - Project 2
 
 ![CV Writer Video](<cv writer-1.gif>)
 
@@ -10,9 +10,7 @@ The application's core idea originated from real-world concerns expressed by bot
 
 This README will guide you through the project's backstory, features, structure, prerequisites, installation steps, usage instructions, dependencies, configuration options, and contribution guidelines. It concludes with licensing information, acknowledgments, and future improvement plans, including a migration to more robust frameworks.
 
-(Image below from Project 1, showing how far we've come!)
-
-<img src="/Project-1-HTML-CSS/md-images/fullstack.jpg" alt="Full Stack Project Image" />
+Read more about project 1: https://github.com/mikeadex/full-stack-projects/tree/main/Project-1-HTML-CSS
 
 ## Table of Contents
 
