@@ -46,10 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     uploadInput.addEventListener("change", handleFileChange);
 });
 
-async function personalStatementWriter(event) {
-    event.preventDefault();
-}
-
 async function aiWriter(event) {
     event.preventDefault();
 

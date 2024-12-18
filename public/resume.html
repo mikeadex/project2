@@ -39,7 +39,7 @@
           <span class="logo">
             <img src="#" alt="Logo" />
           </span>
-          <span class="nav-link">
+          <div class="nav-link">
             <ul>
               <li><a href="index.html" class="active">Home</a></li>
               <li><a href="get-started.html">My Resume</a></li>
@@ -54,7 +54,7 @@
                 >
               </li>
             </ul>
-          </span>
+          </div>
         </nav>
         <nav class="mobile">
           <span class="logo-mobile"></span>
@@ -67,6 +67,7 @@
       </header>
       <div class="form-main">
         <section class="form-section top-padding-20">
+          <h2 hidden>Resume Builder progress bar</h2>
           <div class="form-wrap">
             <div class="progress-content">
               <div class="progress" id="progress"></div>
@@ -286,7 +287,6 @@
                         id="start-date-1"
                         name="start-date[]"
                         class="start-date"
-                        placeholder="Start Date"
                         required
                         aria-describedby="error-start-1"
                       />
@@ -305,7 +305,6 @@
                         id="completion-date-1"
                         name="completion-date[]"
                         class="completion-date"
-                        placeholder="Completion Date"
                         required
                         aria-describedby="error-end-1"
                       />
@@ -452,7 +451,6 @@
                         id="start-date-1"
                         name="start-date[]"
                         class="start-date"
-                        placeholder="Start Date"
                         required
                         aria-describedby="error-job-start-1"
                       />
@@ -470,7 +468,6 @@
                         id="end-date-1"
                         name="end-date[]"
                         class="completed-date"
-                        placeholder="Completed Date"
                         required
                         aria-describedby="error-job-end-1"
                       />

@@ -161,7 +161,6 @@ function storage4(event) {
     const jobInterest = document.getElementById('desired-position').value.trim();
     const desiredLocation = document.getElementById('preferred-location').value.trim();
     const jobType = document.getElementById('job-type').value.trim();
-    let isValid = true;
 
     const data4 = {
         jobInterest,
@@ -177,17 +176,6 @@ function storage4(event) {
     localStorage.setItem('data4', JSON.stringify(data4));
     console.log('Data4 stored in localStorage.');
 
-}
-
-function storage5() {
-    // capture data from personal statement
-    // aggregate all data from localStorage
-    // send data to ai writer function
-    // clear localStorage
-
-    // later: ai writer function will return a response
-    // display response to user
-    // store response in postgres database as CV and as objects for future reusage
 }
 
 // Attach event listeners after DOM is loaded

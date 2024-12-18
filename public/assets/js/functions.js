@@ -11,7 +11,6 @@ const education = document.getElementById('education');
 const experience = document.getElementById('experience');
 const jobInterest = document.getElementById('job-interest');
 const personalStatement = document.getElementById('personal-statement');
-const progress = document.getElementById('progress');
 const circles = document.querySelectorAll('.circle-step');
 //===============Set the initial state of the form================
 let currentActive = 1;
