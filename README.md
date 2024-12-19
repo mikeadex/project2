@@ -1,4 +1,4 @@
-# Meet Ella, an HR Expert - Project 2
+# Meet Ella, an HR Expert - Project 2 [View app](https://ellawritescv.vercel.app)
 
 ![CV Writer Video](<cv writer-1.gif>)
 
@@ -101,7 +101,7 @@ npm install
 npm start
 ```
 
-This will initiate the server at http://localhost:3000.
+This will initiate the server at http://localhost:4000.
 
 _For live updates during development, use:_
 
@@ -115,7 +115,7 @@ npm run dev
 
 1. **Open Your Browser**
 
-   - Navigate to http://localhost:3000
+   - Navigate to http://localhost:4000
 
 2. **Create or Upload Your CV**
 
@@ -193,7 +193,7 @@ DB_CONNECTION_STRING=your-database-connection-string
 2. **Server Settings**
 
 ```javascript
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );
