@@ -2,7 +2,7 @@
 
 let eduCount = document.querySelectorAll('.edu-fieldset').length;
 
-// Function to handle toggle
+// Function to handle toggle. Toggle fieldset is set to false by default and when user switches to true, end date is hidden
 function handleToggle(fieldset) {
     const i = fieldset.getAttribute('data-index');
     const certificateCheckBox = fieldset.querySelector(`#certificate-inview-${i}`);
@@ -28,7 +28,6 @@ function addEducationFieldSet() {
     const lastFieldSet = allFieldsets[allFieldsets.length - 1];
     const cloned = lastFieldSet.cloneNode(true);
 
-    // Update data-index
     cloned.setAttribute('data-index', eduCount);
 
     // Update all HTML elements with the new data-index
@@ -36,12 +35,12 @@ function addEducationFieldSet() {
     inputs.forEach(input => {
         if (input.id) {
             const idParts = input.id.split('-');
-            // Remove the last part (index) and join the rest to form the base ID
+            // this will remove the last part of the id: 'first-name-1' becomes 'first-name' and then join it to the new nicrement by eduCount: 'first-name-2'
             const baseId = idParts.slice(0, -1).join('-');
             const newId = `${baseId}-${eduCount}`;
             input.id = newId;
 
-            // Update aria-describedby ID
+
             if (input.getAttribute('aria-describedby')) {
                 const errorIdParts = input.getAttribute('aria-describedby').split('-');
                 const baseErrorId = errorIdParts.slice(0, -1).join('-');
@@ -50,7 +49,7 @@ function addEducationFieldSet() {
             }
         }
 
-        // Clear input values before appending
+        // clean all fields before appending it. This is essential for improved user experience and avoid confusion
         if (input.type !== 'checkbox' && input.tagName.toLowerCase() !== 'select' && input.tagName.toLowerCase() !== 'textarea') {
             input.value = '';
         } else if (input.type === 'checkbox') {
